@@ -107,9 +107,12 @@ Query Executed in 0.021s
 └── benchmarks/
     └── execution_log_summary.txt      
 ```
+___
+
 ## Step-by-Step Deployment & Execution Guide
-```bash
+
 ### Step 1: Clone Repository
+```bash
 git clone https://github.com/Elsamag/sql-ecom-shopflow-fraud-engine.git
 ```
 ### Step 2: Enter Project Directory
