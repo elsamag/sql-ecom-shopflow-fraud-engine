@@ -45,7 +45,7 @@ The solution implements an optimized column-specific predicate filter (`WHERE ri
   │
 📤 OUTPUT RESULT SET
   └──► Isolated Fraud Records (Real-Time Dispatch Halt)
-
+```
 ## Production Implementation Snippet
 
 ```sql
@@ -91,3 +91,56 @@ Query Executed in 0.021s
 [SUCCESS] High-risk orders isolated.
 [SUCCESS] Warehouse dispatch halted.
 ```
+## Repository Structure & Directory Layout
+
+```text
+├── README.md                          
+├── LICENSE                            
+├── src/
+│   └── fraud_extraction_query.sql     
+├── docs/
+│   ├── README.html                    
+│   ├── README.pdf                     
+│   └── README-PLAYBOOK.pdf            
+├── data/
+│   └── sample_transactions.csv        
+└── benchmarks/
+    └── execution_log_summary.txt      
+```
+## Step-by-Step Deployment & Execution Guide
+```bash
+### Step 1: Clone Repository
+git clone https://github.com/Elsamag/sql-ecom-shopflow-fraud-engine.git
+```
+### Step 2: Enter Project Directory
+```bash
+cd sql-ecom-shopflow-fraud-engine
+```
+
+### Step 3: Execute SQL Query
+```bash
+psql -h shopflow-db.internal \
+     -U elsamag_admin \
+     -d ecom_db \
+     -f src/fraud_extraction_query.sql
+```
+
+## 💼 Enterprise Consultation & Retainer Inquiries
+
+> **Need Custom Database Optimization & Analytics Infrastructure?**
+
+**Elsamag IT Solutions** provides enterprise database optimization, automated reporting pipeline design, and high-performance SQL query tuning.
+
+* **Lead Technical Consultant:** Samuel Chinwendu Agu  
+* **GitHub Profile:** [github.com/Elsamag](https://github.com/Elsamag)  
+* **Direct Engagement:** Reach out via GitHub or Upwork for retainer inquiries, custom architecture audits, and database optimization contracts.
+
+---
+
+### ⭐ Support & Feedback
+
+If this project or repository helped you optimize your infrastructure or solve a technical bottleneck, please give it a **Star (⭐)** on GitHub!
+
+Follow **[Samuel Chinwendu Agu (@Elsamag)](https://github.com/Elsamag)** for upcoming open-source enterprise analytics, cybersecurity, and data engineering tools.
+
+For enterprise consulting, infrastructure auditing, or retainer inquiries, connect directly via **[GitHub Profile](https://github.com/Elsamag)** or **Elsamag IT Solutions**.
